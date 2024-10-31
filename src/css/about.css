@@ -1,0 +1,31 @@
+@import 'reset.css';
+
+/* ABOUT */
+.about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.download-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0B60B0;
+    transition: background-color 0.3s ease;
+}
+
+.download-button button:hover {
+    background-color: #40A2D8;
+}
+
+.download-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}

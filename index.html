@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/navbar.css">
+    <link rel="stylesheet" href="src/css/home.css">
+    <link rel="stylesheet" href="src/css/about.css">
+    <link rel="stylesheet" href="src/css/projects.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <title>Gui Carv</title>
+</head>
+
+<body>
+    <!-- NAV -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Gui Carv</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#Home" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-button">
+                <button class="open-popup" onclick="openPopup()"><a href="#">Contato</a></button>
+            </div>
+            <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+            <div class="popup" id="popup">
+                <h3>Contatos</h3>
+                <a href="mailto:gui.20031603@gmail.com" class="contact-link" target="_blank">Email</a>
+                <a href="https://wa.me/5513996950829" class="contact-link" target="_blank">WhatsApp</a>
+                <button class="close-button" onclick="closePopup()">Fechar</button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <!-- MENU MOBILE -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#Home" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                <div class="contact-button">
+                    <button class="open-popup" onclick="openPopup()"><a href="#">Contato</a></button>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section class="home" id="Home">
+            <div class="home-content">
+                <h1>Olá, me chamo Guilherme Carvalho</h1>
+                <p>Sou estudante de Sistemas de Informação e tecnólogo em Análise e Desenvolvimento de Sistemas. Tenho
+                    grande paixão por tecnologia e gosto de explorar novas linguagens e ferramentas para desenvolver
+                    soluções inovadoras e eficientes.
+                </p>
+            </div>
+            <img class="img-perfil" src="/src/img/perfil.png" alt="">
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="Sobre">
+            <div class="about-content">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam illum repellat eius dignissimos
+                    quisquam voluptas ipsum rem. Quasi pariatur vitae atque, amet nam adipisci excepturi, dolor
+                    recusandae libero soluta voluptas!
+                </p>
+                <div class="download-button">
+                    <button><a href="/assets/img/Guilherme Carvalho de Oliveira.pdf"
+                            download="Currículo Guilherme Carvalho de Oliveira">Download cv</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects" id="Projetos">
+            <div class="projects-content">
+                <h1>Meus projetos</h1>
+                <p>Veja meus projetos mais recentes</p>
+                <div class="container-projetos">
+                    <!-- Projeto 1 -->
+                    <div class="projeto">
+                        <img src="projeto1.jpg" alt="Imagem do Projeto 1">
+                        <h1>Projeto 1</h1>
+                        <div class="download-button">
+                            <button><a href="/#" target="_blank">Ver no GitHub</a></button>
+                        </div>
+                    </div>
+                    <!-- Projeto 2 -->
+                    <div class="projeto">
+                        <img src="projeto2.jpg" alt="Imagem do Projeto 2">
+                        <h1>Projeto 2</h1>
+                        <div class="download-button">
+                            <button><a href="/#" target="_blank">Ver no GitHub</a></button>
+                        </div>
+                    </div>
+                    <!-- Projeto 3 -->
+                    <div class="projeto">
+                        <img src="projeto3.jpg" alt="Imagem do Projeto 3">
+                        <h1>Projeto 3</h1>
+                        <div class="download-button">
+                            <button><a href="/#" target="_blank">Ver no GitHub</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <span>
+            &copy; Guilherme Carvalho de Oliveira, 2024 - Todos os direitos reservados.
+        </span>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

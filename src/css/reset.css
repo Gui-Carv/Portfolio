@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* COLORS
+#000000
+#0B60B0
+#40A2D8
+#F0EDCF 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 600px;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin-top: 50px;
+        padding: 15px;
+    }
+}

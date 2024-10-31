@@ -1,0 +1,107 @@
+@import 'reset.css';
+
+/* HOME */
+.home {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.img-perfil {
+    margin-left: 20px;
+    border-radius: 10%;
+    max-width: 300px;
+    border: 3px solid #0B60B0;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Suaviza a transição da borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-perfil:hover {
+    transform: scale(1.1);
+    /* Aumenta a imagem em 10% */
+    border: 3px solid #40A2D8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.close-button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-link {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #007BFF;
+    text-align: center;
+}
+
+.open-popup {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content {
+        margin-right: 0;
+        /* Remove o espaço à direita do texto */
+        margin-bottom: 20px;
+        /* Adiciona um espaço abaixo do texto */
+    }
+
+    .img-perfil {
+        margin-top: 10px;
+        /* Adiciona espaço acima da imagem quando movida para baixo */
+    }
+
+    .popup {
+        width: 300px;
+        height: 600px;
+    }
+}

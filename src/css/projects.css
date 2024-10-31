@@ -1,0 +1,56 @@
+@import 'reset.css';
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Estilo dos projetos */
+.container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start; /* Alinha os itens ao início */
+}
+
+.projeto {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(33.33% - 10px); /* 3 colunas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.projeto h1 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    #projetos h2 {
+        font-size: 1.4em;
+    }
+
+    /* Ajuste dos projetos para duas colunas */
+    .projeto {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajuste dos projetos para uma coluna*/
+    .projeto {
+        width: 100%;
+    }
+}
